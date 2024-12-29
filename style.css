@@ -1,0 +1,721 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+/* ---------------------Home Page------------------ */
+nav .custom-nav{
+        color: rgb(81 63 164);
+        font-weight: 500;
+        
+
+}
+nav .custom-nav:hover:not(:nth-child(1)){
+    color: rgb(81 63 164);
+    background-color: rgb(253 195 8);
+    border-radius: 6px;
+    transition: background-color 1s linear;
+
+
+    
+
+}
+nav .custom-active{
+    background-color: rgb(253 195 8);
+    color: rgb(81 63 164);
+    border-radius: 6px;
+    
+}
+.nav-item a{
+    font-size: 16px;
+}
+.nav-item a:hover{
+
+        background-color: rgb(253 195 8);
+        color: rgb(81 63 164);
+        border-radius: 6px;
+    
+        
+
+}
+
+.navbar-brand img{
+    width: 40%;
+   
+}
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-nav{
+width: 90%;
+justify-content: space-evenly;
+}
+
+
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 36.25%; /* 16:9 aspect ratio (change this value to fit your desired aspect ratio) */
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .fa-chevron-left, .fa-chevron-right{
+    background-color: rgb(255, 196, 0);
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1024 - 320))); /* Adjust the min and max values as needed */
+ 
+color:rgb(85, 65, 176);
+padding: 70%;
+border-radius: 6px;
+}
+.entry{
+    background-image: url(assets/tree.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+.entry-head{
+    text-align: center;
+    margin: 24px auto;
+  }
+  h1{
+    font-weight: 400;
+    font-size:34px;
+    color: #ff7113;
+    line-height: 46px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 20px auto;
+  }
+.entry-head h2{
+    font-weight: 400;
+    font-size:32px;
+    color: #0f4f96;
+    line-height: 44px;
+    /*font-family: 'Open Sans', sans-serif;*/
+
+}
+.hr{
+    width: 100px;
+    height: 1px;
+    background-color: #0f4f96;
+    margin: 10px auto;
+}
+.hr1{
+    width: 100px;
+    height: 1px;
+    background-color: white;
+    margin: 10px 0px;
+  
+}
+.tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.tab{
+    width: 15%;
+    text-align: justify;
+}
+.tab h4{
+    color: #ff7113;
+}
+.tab h4,p{
+    margin: 10px auto;
+
+}
+.facilities{
+    display: grid;
+    grid-template-columns: repeat(3,28%);
+    gap: 10px;
+    justify-content: center;
+}
+.facility{
+    color: white;
+    padding: 20px;
+
+}
+.facility img{
+    width: 90%;
+    height: auto;
+}
+.facility:nth-child(1){
+    background-color: #744791 ;
+}
+.facility:nth-child(2){
+    background-color: #d59a00 ;
+}
+.facility:nth-child(3){
+    background-color: #097f8d ;
+}
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto;
+}
+.intro-p{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro-p p{
+    font-size: 22px;
+    text-align:start;
+
+}
+.intro-p a{
+    text-decoration: none;
+    font-size: 22px;
+    background-color: #0f4f96;
+    color: white;
+    width: 50%;
+    padding: 6px;
+    border-radius: 6px;
+}
+.intro-p a:hover{
+    /* background-color:white;
+    color:#0f4f96; */
+    border: 2px solid #0f4f96 ;
+    box-shadow: 0 20px 38px rgba(0,0,0,0.16);
+    transition: 0.2s;
+    transform: translateY(-5px);
+
+}
+.intro-img{
+    width: 55%;
+}
+.intro-img img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+
+
+}
+.map{
+    background-color: rgb(43 82 63);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer{
+    height: 6vh;
+    background-color: rgb(254 163 61);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+@media(max-width:767px) {
+    h1{
+        font-size: 24px;
+    }
+    .entry-head h2{
+        font-size: 22px;
+    }
+    .tabs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab{
+        width: 90%;
+        text-align: center;
+    }
+    .facilities{
+        grid-template-columns: 1fr;
+        margin: 12px;
+    }
+    .facility img{
+        width: 100%;
+    }
+    .intro{
+        flex-direction: column-reverse;
+    }
+    .intro-img{
+        width: 90%;
+        margin: auto;
+    }
+    .intro-p{
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .intro-p p{
+        font-size:18px;
+    }
+    .intro-p a{
+        font-size: 18px;
+    }
+ 
+
+    
+}
+@media (min-width: 768px) and (max-width: 991px) {
+   .tab{
+    width: 35%;
+   }
+   .intro{
+    padding: 10px;
+   }
+   .intro-p{
+    width: 40%;
+   }
+   .intro-img{
+    width: 50%;
+    font-size: 16px;
+   }
+  }
+  @media (max-width:405px) {
+    .navbar-brand img{
+        width: 120px;
+       
+    }
+    
+  }
+
+/* ---------------------Home Page End------------------ */
+.banner {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    pointer-events: none;
+  }
+  .about-banner{
+    background-image: url(assets/GP\ 3.jpg);
+
+  }
+  .academics-banner{
+    background-image: url(assets/academics-banner.jpg);
+
+  }
+  .facilities-banner{
+    background-image: url(assets/facilities.jpg);
+
+
+  }
+  .gallery-banner{
+    background-image: url(assets/board.jpg);
+
+
+    
+  }
+  .contact-banner{
+    background-image: url(assets/contact.jpg);
+
+
+  }
+
+  .banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  height: 450px;
+  position: relative;
+}
+.banner-text{
+    color:white;
+    position: absolute;
+    bottom: 94px;
+    left: 10%;
+    right: 0;
+
+}
+.banner-text h2{
+    font-size: 52px;
+}
+
+.about{
+    width: 86%;
+    margin: auto;
+    background-color: white;
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+    
+}
+.about h1{
+    font-size: 40px;
+    color:rgb(240 7 3);
+    font-family:Georgia, Times , Times, serif;
+padding-top: 3  0px;}
+.welcome{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.welcome-p{
+    width: 45%;
+    padding: 10px;
+
+}
+.welcome-p h3{
+    color:rgb(253 195 8);
+}
+.welcome-p p{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.welcome-img{
+    width: 50%;
+}
+.welcome-img img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+
+
+}
+.about-features{
+    margin-top: 20px;
+    padding: 16px;
+}
+.about-features p{
+font-size: 18px;
+margin: 25px 0px;
+}
+.about-features p::before{
+    content: "✨";
+  
+}
+.faculties-h3{
+    color:rgb(240 7 3);
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0px;
+
+}
+.faculties{
+ display: flex;
+ justify-content: space-evenly;
+ margin-bottom: 40px;
+}
+.card1{
+    padding: 18px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.397);
+
+}
+.card-img{
+    width: 70%;
+    height:auto;
+    border-radius: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 100%;
+}
+.card1 h3{
+    background-color: #d59a00;
+    color:white;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 20px;
+
+}
+
+@media(max-width:767px) {
+    .about{
+        width: 90%;
+    }
+    .welcome{
+        flex-direction: column-reverse;
+    }
+    .welcome-img{
+        width: 90%;
+        margin: auto;
+    }
+    .welcome-p{
+        width: 90%;
+
+        margin: auto;
+    margin-top: 20px;
+    }
+    .faculties{
+        flex-direction: column;
+    }
+    .card1{
+        width: 80%;
+        margin: auto;
+        margin-bottom:20px;
+
+
+    }
+}
+
+
+/* ........................Academics............. */
+.academics{
+    padding: 20px;
+}
+.academics h4{
+    color:rgb(253 195 8);
+
+}
+.academics strong{
+    color:#744791;
+
+}
+.academics li{
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 8px;
+}
+.academics ::marker{
+    content:"✅";
+}
+
+
+/* ..................Facilities.................... */
+.infra-main{
+    padding: 20px;
+}
+.infra-h3{
+    color:rgb(253 195 8);
+
+}
+.infras{
+    display: flex;
+
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.infra-content{
+    width: 40%;
+}
+.infra-content h4{
+    color: #744791;
+}
+.infra-img{
+    width: 40%;
+    border-radius: 8px;
+
+}
+
+.infra-img img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.397);
+
+
+}
+@media(max-width:767px){
+    .infras{
+        flex-direction: column-reverse;
+    }
+    .infras:nth-child(odd){
+        flex-direction: column;
+    }
+    .infra-content, .infra-img{
+        width: 100%;
+        margin: auto;
+    
+    }
+    .infra-img{
+        margin-bottom: 10px;
+    }
+   
+}
+
+
+
+/* .....................................Gallery....................... */
+.gallery{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+.gallery h1{
+    font-size: 40px;
+    color:rgb(240 7 3);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+padding-top: 3  0px;}
+.gallery-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    justify-content: center;
+    padding: 10px;
+    gap: 16px;
+}
+
+.gallery-img img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.397);
+}
+.gallery-img img:hover{
+    border: 4px solid rgb(253 195 8);
+}
+
+
+/* .........................Contact.................... */
+
+.contact-page{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    margin-top: -100px;
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+.contact-page h1{
+    font-size: 40px;
+    color:rgb(240 7 3);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+padding-top: 3  0px;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.contact-p{
+    width: 30%;
+    background-color: #513fa4;
+    border-radius: 6px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    color: white;
+    text-align: justify;
+
+}
+.contact-p h2{
+    color: rgb(253 195 8);;
+}
+.contact-p a{
+    color: white;
+    text-decoration: none;
+}
+.contact-btn{
+    text-align: start;
+}
+.contact-p button{
+    background-color: rgb(240 7 3);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 50px;
+    margin-top: 80px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.397);
+
+}
+.contact-p button:hover{
+    transition: 0.2s;
+    transform: translateY(-5px);
+}
+
+
+.contact-map{
+    width: 60%;
+}
+.contact-map iframe{
+    width: 100%;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.397);
+
+}
+@media(max-width:767px){
+
+    .contact{
+        flex-direction: column;
+    }
+    .contact-p,.contact-map{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .map iframe{
+        width: 90%;
+    }
+}
+
+
+/*loginpage */
+/*.login-page{
+    width: 30%;
+    background-color: #513fa4;
+    border-radius: 6px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    color: white;
+    text-align: justify;
+}*/
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* Add CSS styles for tabs and facilities to emerge from sides */
+
+  .animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+ 
+
+  /* .intro>.animate {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  } */
+  .active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
